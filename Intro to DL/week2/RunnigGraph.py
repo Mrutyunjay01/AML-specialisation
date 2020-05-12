@@ -18,3 +18,6 @@ c = a * b
 # running a graph
 print(c)
 print(sess.run(c))
+
+# always close the session
+tf.Session.close(sess)
