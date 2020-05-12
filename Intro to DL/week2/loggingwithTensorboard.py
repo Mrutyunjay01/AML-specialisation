@@ -9,7 +9,6 @@ tf.reset_default_graph()
 x = tf.get_variable('x', shape=(), dtype=tf.float32)
 f = x ** 2
 
-tf.InteractiveSession.close(sess)
 # say we want to minimize the function f
 optimizer = tf.train.GradientDescentOptimizer(0.1)
 step = optimizer.minimize(f)
